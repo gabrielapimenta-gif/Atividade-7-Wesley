@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Equações</title>
+    <link rel="stylesheet" href="assets/estilo.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Resolução de Equações</h2>
+        <p>Informe os coeficientes (ax² + bx + c = 0):</p>
+        
+        <div class="input-group">
+            <input type="number" id="coefA" placeholder="a" step="any">
+            <input type="number" id="coefB" placeholder="b" step="any">
+            <input type="number" id="coefC" placeholder="c" step="any">
+        </div>
+
+        <button onclick="resolverEquacao()">Calcular</button>
+
+        <div id="resultado" class="hidden">
+            <div id="status"></div>
+            <div id="detalhes"></div>
+        </div>
+    </div>
+    <script src="assets/funcionalidade.js"></script>
+</body>
+</html>

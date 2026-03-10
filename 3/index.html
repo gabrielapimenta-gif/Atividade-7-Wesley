@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maior Número Informado</title>
+    <link rel="stylesheet" href="assets/estilo.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Qual é o maior número?</h2>
+        <p>Insira os números um por um:</p>
+        
+        <div class="input-box">
+            <input type="number" id="numInput" placeholder="Digite um número">
+            <button onclick="adicionarNumero()">Adicionar</button>
+        </div>
+
+        <div id="listaContainer" class="hidden">
+            <strong>Números inseridos:</strong>
+            <p id="numerosDigitados"></p>
+            <button class="btn-processar" onclick="calcularMaior()">Verificar Maior</button>
+        </div>
+
+        <div id="resultado" class="hidden">
+            <h3>O maior número é: <span id="maiorValor"></span></h3>
+            <button onclick="reiniciar()">Limpar Tudo</button>
+        </div>
+    </div>
+    <script src="assets/funcionalidade.js"></script>
+</body>
+</html>

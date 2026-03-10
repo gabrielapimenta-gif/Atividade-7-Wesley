@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máquina de Vendas</title>
+    <link rel="stylesheet" href="assets/estilo.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Simulador de Troco</h2>
+        
+        <div class="input-group">
+            <label for="valorCompra">Valor da Compra (R$):</label>
+            <input type="number" id="valorCompra" step="1" placeholder="Insira o valor da compra">
+        </div>
+
+        <div class="input-group">
+            <label for="valorPago">Valor Pago (R$):</label>
+            <input type="number" id="valorPago" step="1" placeholder="Insira o valor pago">
+        </div>
+
+        <button onclick="processarTroco()">Calcular Troco</button>
+
+        <div id="resultado" class="hidden">
+            <p id="mensagemErro" class="erro"></p>
+            <div id="detalhesTroco">
+                <h3>Resumo do Troco: <span id="totalTroco"></span></h3>
+                <ul id="listaNotas"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="assets/funcionalidade.js"></script>
+</body>
+</html>
